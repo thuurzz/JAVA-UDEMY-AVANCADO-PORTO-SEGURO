@@ -1,19 +1,19 @@
-package sessao9.banco;
+package sessao09.banco;
 
 public class Conta {
 	private String nome;
-	private int Numconta;
+	private int numconta;
 	private double saldo;
 
 	public Conta(String nome, int numconta, double depositoInicial) {
 		this.nome = nome;
-		Numconta = numconta;
+		this.numconta = numconta;
 		deposito(depositoInicial);
 	}
 
 	public Conta(String nome, int numconta) {
 		this.nome = nome;
-		Numconta = numconta;
+		this.numconta = numconta;
 	}
 
 	public String getNome() {
@@ -39,7 +39,7 @@ public class Conta {
 
 
 	public int getNumconta() {
-		return Numconta;
+		return numconta;
 	}
 
 	public String toString() {
@@ -47,7 +47,7 @@ public class Conta {
 				+"Nome: "
 				+ nome + "\n"
 				+ "Numero da conta: " 
-				+ Numconta + "\n"
+				+ numconta + "\n"
 				+ "Saldo = R$"
 				+ String.format("%.2f", saldo);
 	}

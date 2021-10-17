@@ -1,4 +1,4 @@
-package sessao9.banco;
+package sessao09.banco;
 
 import java.util.Scanner;
 
